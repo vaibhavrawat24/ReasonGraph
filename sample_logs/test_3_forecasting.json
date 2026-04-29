@@ -1,0 +1,216 @@
+{
+  "run_id": "afa293fb",
+  "answer": "To reach the 2030 job target of 17,333 from the 2022 projected baseline of 8,086, the required Compound Annual Growth Rate (CAGR) is approximately 10.0% per year.\n\n**Calculation:**\nCAGR = (End Value / Start Value)^(1 / Years) - 1\nCAGR = (17,333 / 8,086)^(1/8) - 1\nCAGR = 2.1436^(0.125) - 1\nCAGR \u2248 0.10000 = **10.0%**\n\n**Sources (Page 27):**\n- 2022 baseline (projected): 8,086 jobs\n- 2030 target: 17,333 jobs\n- Time period: 8 years (2022 \u2192 2030)\n\nThe report also states a rounded target of \"17,000 jobs and \u20ac2.1b GVA by 2030\" on Page 3, which is consistent with the detailed projection table on Page 27.",
+  "citations": [
+    {
+      "page": 27,
+      "quote": "| 2022 | \u20ac1,183,076,038 (projection) | 8,086 (projection) |\n| 2030 | \u20ac2,536,028,556 (c. \u20ac2.5bn) | 17,333 |",
+      "fact": "The projected employment for 2022 is 8,086, and the target for 2030 is 17,333 jobs."
+    },
+    {
+      "page": 3,
+      "quote": "There is a clear cyber opportunity of 17,000 jobs and \u20ac2.1b GVA by 2030.",
+      "fact": "The 2030 job opportunity is stated as 17,000 jobs."
+    },
+    {
+      "page": 27,
+      "quote": "| 2022 | \u20ac1,183,076,038 (projection) | 8,086 (projection) |\n| 2030 | \u20ac2,536,028,556 (c. \u20ac2.5bn) | 17,333 |",
+      "fact": "The projected employment for 2022 is 8,086, and the target for 2030 is 17,333 jobs."
+    },
+    {
+      "page": 3,
+      "quote": "There is a clear cyber opportunity of 17,000 jobs and \u20ac2.1b GVA by 2030.",
+      "fact": "The 2030 job opportunity is stated as 17,000 jobs."
+    }
+  ],
+  "calculations": [
+    {
+      "expression": "(17333 / 8086) ** (1/8) - 1",
+      "result": 0.0999995310296744,
+      "result_formatted": "0.100000"
+    },
+    {
+      "expression": "(17333 / 8086) ** (1/8) - 1",
+      "result": 0.0999995310296744,
+      "result_formatted": "0.100000"
+    }
+  ],
+  "iterations": 6,
+  "elapsed_seconds": 81.58,
+  "model": "google/gemini-2.5-pro-preview",
+  "timestamp": "2026-04-29T12:46:17.790599Z",
+  "test_id": "test_3_forecasting",
+  "query": "Based on our 2022 baseline and the stated 2030 job target, what is the required compound annual growth rate (CAGR) to hit that goal?",
+  "trace": [
+    {
+      "iteration": 1,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "vector_search",
+          "args": {
+            "query": "2030 job target"
+          },
+          "result": {
+            "query": "2030 job target",
+            "results": [
+              {
+                "page": 3,
+                "type": "text",
+                "relevance_score": 0.7103,
+                "content": "the regional diversity economic contribution and opportunities for CLUSTER MANAGER, CYBER IRELAND CHAIR OF CYBER SECURITY AT MTU that this sector is supporting with employment further growth. This report in turn, will allow nationwide. government agencies to inform future national policies, funding agencies to prioritise research There is a clear cyber opportunity of 17,000 jobs funding in sectoral applications where Ireland is and \u20ac2.1b GVA by 2030. To realise this, work a leader and academic institutions to respond to must continue to ensure we strengthen our cyber industry skills needs. security preparedness across all sectors, to support a resilient and prosperous economy and society. As lead of the HEA Cyber Skills project, I was This can only be achieved by industry working with delighted to work in partnership with Cyber Ireland, our partners in government and academia. in commissioning and developing this report."
+              },
+              {
+                "page": 23,
+                "type": "text",
+                "relevance_score": 0.6511,
+                "content": "4444 CCYYBBEERR IIRREELLAANNDD 22002222 EEDDIITTIIOONN STATE OF THE CYBER SECURITY SECTOR IN IRELAND 45 05 5.2 DEMAND FOR CYBER SECURITY Labour Market Overview As set out above, we estimate there are There are a wide range of studies exploring the approximately 7,351 employees in the cyber shortfall in cyber security talent, against a backdrop security sector in Ireland. This is closely aligned of increased demand. Indeed, one of the most to the National Cyber Security Strategy, which significant factors leading to data breaches across estimated approximately 6,500 employees in digital structures globally is the lack of training of 2019/20. non-technical employees and the lack of highly 5.1 skilled cybersecurity professionals.24 INTRODUCTION Whilst this study is a baseline, this suggests that the cyber security sector is growing (with respect to The ISC2 Cybersecurity Workforce Study (2021)25 This section explores Ireland\u2019s cyber security labour the workforce) in Ireland by a similar magnitude to estimates that Ireland has an annual shortfall of market in relation to the size of the workforce, and other countries. We would estimate this growth in approximately 10,000 people in cyber security demand for talent. It also explores the current the region of c. 10% per annum. This is reserved in roles (across the broader economy). This is also demand for cyber security skills both in Ireland and comparison to growth ambitions among surveyed explored in the Cyber Ireland Cyber Security globally, and the potential opportunities that this firms, with 83% of firms surveyed (n=76) predicting Skills Report 2021.26 can generate. growth, half of all firms expecting to grow at a rate of 25% or higher over the next 12 months. JOB VACANCIES ANALYSIS One proxy for understanding employer demand for cyber security talent is to undertake job vacancy analysis i.e., identify and measure the number of employer job posts for relevant roles in Ireland. In December 2021, the LinkedIn platform had approximately 800 active job vacancies related to cyber security skills in Ireland (as shown in Figure 5.1). Please note this only tracks job vacancies posted or identified on LinkedIn, and may therefore underestimate wider demand for cyber security roles across Ireland posted on alternative platforms or job boards. The research team undertook an initial analysis of these job vacancies where appropriate. This"
+              },
+              {
+                "page": 23,
+                "type": "text",
+                "relevance_score": 0.6386,
+                "content": "or identified on LinkedIn, and may therefore underestimate wider demand for cyber security roles across Ireland posted on alternative platforms or job boards. The research team undertook an initial analysis of these job vacancies where appropriate. This includes a review of location and experience. Overall, this suggests that cyber security roles are typically concentrated in Dublin and Cork; however, the rise of remote working means there is more opportunity across the entire island. Further, the vacancy analysis (Figure 5.2) suggests there is a higher demand for cyber security employees with middle to senior-level experience (typically 5+ years). Whilst this may reflect the nature of advertising through LinkedIn, it suggests a need to further develop domestic entry-level talent to help stem the skills gap. 24 Kesselring, L. (2017). \u2018Cyber Security Skills Crisis Causing Rapidly Widening Business Problem\u2019. Available at: https://www.prweb.com/ releases/2017/11/prweb14899778.htm 25 ISC2 (2021). \u2018A Resilient Cybersecurity Profession Charts the Path Forward\u2019. Available at: https://www.isc2.org//-/media/ISC2/Research/2021/ ISC2-Cybersecurity-Workforce-Study-2021.ashx 26 Somers, C. and Byrne, E. (2021) \u2018Cyber Security Skills Report 2021\u2019 Available at: https://cyberireland.ie/wp-content/uploads/2021/02/Cyber-IrelandSkills-Report-2021.pdf"
+              },
+              {
+                "page": 27,
+                "type": "table",
+                "relevance_score": 0.6353,
+                "content": "| GVA EMPLOYMENT |  |  |\n| --- | --- | --- |\n| 2021 | \u20ac1,075,523,670 (current estimate) | 7,351 (current estimate) |\n| 2022 | \u20ac1,183,076,038 (projection) | 8,086 (projection) |\n| 2023 | \u20ac1,301,383,641 | 8,895 |\n| 2024 | \u20ac1,431,522,005 | 9,784 |\n| 2025 | \u20ac1,574,674,206 | 10,763 |\n| 2026 | \u20ac1,732,141,627 | 11,839 |\n| 2027 | \u20ac1,905,355,789 | 13,023 |\n| 2028 | \u20ac2,095,891,368 | 14,325 |\n| 2029 | \u20ac2,305,480,505 | 15,758 |\n| 2030 | \u20ac2,536,028,556 (c. \u20ac2.5bn) | 17,333 |"
+              },
+              {
+                "page": 28,
+                "type": "text",
+                "relevance_score": 0.635,
+                "content": "attract further international investment to Ireland. as security analysis, incidence response, and threat intelligence 40. Increased engagement with both industry and academia could also reduce latency between academic learning and industry needs. CHALLENGES TO GROWTH Transitioning workers with relevant skills from parallel industries will also support the maturing sector. This should involve industry schemes, government support, and include programmes such as Springboard+ and apprentice programmes, such as FastTrack to The potential for growth outlined above also presents an important challenge to industry, government, Information Technology (FIT). and academia. While responses in Cyber Ireland\u2019s business survey demonstrate optimism and commitment, key challenges facing the sector were also highlighted. Core challenges are outlined below: Ireland should also promote itself as a destination for learning, incentivising students to study, and work in Ireland. This exists currently in the form of a 2-years residency visa poststudy, and scholarships that cover up to 50% of tuition fees 41 for applicable cyber security students. It should be noted that affordability and cost of living can play a role in whether 61% of respondents noted a personnel-related issue, such as a lack of candidates in the Ireland is seen as a viable location for study. Therefore, courses outside of the capital city could labour market with the appropriate skill level (41%), competition from other cyber security be promoted, or subsidies considered for prospective students. businesses (33%), lack of non-technical skills (22%), or unaffordable salaries (21%) Ireland could also explore apprenticeship or retraining schemes that support collaboration 33% of respondents viewed market uncertainty as a barrier to the business, specifically between international businesses and academic institutions. This has worked well in Northern related to COVID-19 (24%) or the UK\u2019s Exiting from the European Union (11%) Ireland, with Microsoft supporting a pre-employment training course with Belfast Met that will result in c.85 new jobs based within Microsoft\u2019s new Cyber Security Centre. 26% faced issues with raising or securing finance, such as a lack of finance to grow or expand operations (16%), insufficient scale to serve larger clients (14%), or a lack of cash flow or working capital (8%). 39 DA Ireland (2021). \u2018Why Ireland for Cyber Security\u2019. Available at: https://www.idaireland.com/newsroom/publications/why-ireland-for-cyber40 Am Cham (n.d). Ireland The Strongest Link in the Chain - Ireland's Global Cyber"
+              },
+              {
+                "page": 36,
+                "type": "text",
+                "relevance_score": 0.6348,
+                "content": "70 CYBER IRELAND 2022 EDITION STATE OF THE CYBER SECURITY SECTOR IN IRELAND 71 The objectives above inform the structure of this report, which includes an overview of the size and make- A headcount of total employees within the sector was also completed, building on previous engagement up of the Irish Cyber Security sector, its economic contribution, the current market opportunities, and undertaken by Cyber Ireland with firms, as well as the review of publicly available employment figures from wider recommendations. LinkedIn profiles and CRO. Other outputs include a longlist of firms engaged in Cyber Security operations working in a dedicated or A business survey was also sent out to the firms. There was a total of 100 responses used to identify the diversified capacity and a survey of approximately 100 firms working in Ireland\u2019s cyber security sector. strengths, opportunities, and barriers faced by Ireland\u2019s cyber security sector. Within this research, the team has identified 489 providers of cyber security products and ser-vices (aligned to the definition set out within the UK Cyber Security Sectoral Analysis, and the Centre for Secure ECONOMIC PROFILING AND POTENTIAL Information Technologies\u2019 sectoral study for Northern Ireland). An economic profile of the sector was produced using company accounts data (where available using Each business has been matched against Companies Registration Office (CRO) registration da-ta (to Bureau van Dijk) and survey responses. Employment estimates were also augmented using the most recent understand the name, description, locations, etc) and web data. Revenue and employment activity has company team size on LinkedIn (filtered by cyber security roles only). been identified through the use of company accounts, LinkedIn, and or direct en-gagement with site leads. The key stages are set out below: The research team used company accounts and survey data to estimate cyber security-related employment, followed by revenue and GVA. Where there were gaps in data, estimates have been used on a \u2018per employee basis. A simple CAGR of 10% is assumed for employment and GVA forecasting up to 2030. SECTOR PROFILING The sector profile was generated collaboratively with Cyber Ireland and includes known members of Cyber Ireland\u2019s network as well as other firms identified in CRO records and identified online through both LinkedIn and general web searches. Search criteria include a c.600-word"
+              }
+            ]
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 2,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "calculate",
+          "args": {
+            "expression": "(17333 / 8086) ** (1/8) - 1"
+          },
+          "result": {
+            "expression": "(17333 / 8086) ** (1/8) - 1",
+            "result": 0.0999995310296744,
+            "result_formatted": "0.100000"
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 3,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "cite",
+          "args": {
+            "quote": "| 2022 | \u20ac1,183,076,038 (projection) | 8,086 (projection) |\n| 2030 | \u20ac2,536,028,556 (c. \u20ac2.5bn) | 17,333 |",
+            "page": 27,
+            "fact": "The projected employment for 2022 is 8,086, and the target for 2030 is 17,333 jobs."
+          },
+          "result": {
+            "citation": {
+              "page": 27,
+              "quote": "| 2022 | \u20ac1,183,076,038 (projection) | 8,086 (projection) |\n| 2030 | \u20ac2,536,028,556 (c. \u20ac2.5bn) | 17,333 |",
+              "fact": "The projected employment for 2022 is 8,086, and the target for 2030 is 17,333 jobs."
+            }
+          }
+        },
+        {
+          "tool": "cite",
+          "args": {
+            "quote": "There is a clear cyber opportunity of 17,000 jobs and \u20ac2.1b GVA by 2030.",
+            "page": 3,
+            "fact": "The 2030 job opportunity is stated as 17,000 jobs."
+          },
+          "result": {
+            "citation": {
+              "page": 3,
+              "quote": "There is a clear cyber opportunity of 17,000 jobs and \u20ac2.1b GVA by 2030.",
+              "fact": "The 2030 job opportunity is stated as 17,000 jobs."
+            }
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 4,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "calculate",
+          "args": {
+            "expression": "(17333 / 8086) ** (1/8) - 1"
+          },
+          "result": {
+            "expression": "(17333 / 8086) ** (1/8) - 1",
+            "result": 0.0999995310296744,
+            "result_formatted": "0.100000"
+          }
+        }
+      ],
+      "text_output": "To achieve the 2030 job target of 17,333 jobs from the 2022 baseline of 8,086 jobs, a compound annual growth rate (CAGR) of 10.0% is required.\n\n**Calculation:**\n\nThe CAGR is calculated using the following formula:\n(Ending Value / Beginning Value)^(1 / Number of Years) - 1\n\nPlugging in the values from the report:\n(17,333 / 8,086)^(1/8) - 1 = 10.0%\n\n"
+    },
+    {
+      "iteration": 5,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "cite",
+          "args": {
+            "quote": "| 2022 | \u20ac1,183,076,038 (projection) | 8,086 (projection) |\n| 2030 | \u20ac2,536,028,556 (c. \u20ac2.5bn) | 17,333 |",
+            "fact": "The projected employment for 2022 is 8,086, and the target for 2030 is 17,333 jobs.",
+            "page": 27
+          },
+          "result": {
+            "citation": {
+              "page": 27,
+              "quote": "| 2022 | \u20ac1,183,076,038 (projection) | 8,086 (projection) |\n| 2030 | \u20ac2,536,028,556 (c. \u20ac2.5bn) | 17,333 |",
+              "fact": "The projected employment for 2022 is 8,086, and the target for 2030 is 17,333 jobs."
+            }
+          }
+        },
+        {
+          "tool": "cite",
+          "args": {
+            "quote": "There is a clear cyber opportunity of 17,000 jobs and \u20ac2.1b GVA by 2030.",
+            "fact": "The 2030 job opportunity is stated as 17,000 jobs.",
+            "page": 3
+          },
+          "result": {
+            "citation": {
+              "page": 3,
+              "quote": "There is a clear cyber opportunity of 17,000 jobs and \u20ac2.1b GVA by 2030.",
+              "fact": "The 2030 job opportunity is stated as 17,000 jobs."
+            }
+          }
+        }
+      ],
+      "text_output": "**Citations:**\n\nThe 2022 baseline and 2030 target are sourced from a table on page 27 of the report. The report also mentions a rounded 2030 target on page 3.\n\n"
+    },
+    {
+      "iteration": 6,
+      "finish_reason": "stop",
+      "tool_calls": [],
+      "text_output": ""
+    }
+  ]
+}

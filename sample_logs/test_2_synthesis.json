@@ -1,0 +1,510 @@
+{
+  "run_id": "38443625",
+  "query": "Compare the concentration of 'Pure-Play' cybersecurity firms in the South-West against the National Average.",
+  "answer": "The concentration of 'Pure-Play' (Dedicated) cybersecurity firms in the South-West (Cork) is slightly higher than the national average, based on office-level data from Table 3.2 of the report (Page 15).\n\n**South-West (Cork) Pure-Play Concentration: 28.68%**\n- Cork has 129 total cybersecurity offices, of which 37 are Pure-Play (dedicated) offices.\n- Calculation: (37 / 129) \u00d7 100 = 28.68%\n\n**National Average Pure-Play Concentration: 26.02%**\n- Ireland has 734 total cybersecurity offices, of which 191 are Pure-Play (dedicated) offices.\n- Calculation: (191 / 734) \u00d7 100 = 26.02%\n\n**Conclusion:** The South-West (Cork) has a Pure-Play concentration of 28.68%, which is 2.66 percentage points above the national average of 26.02%. Cork hosts a proportionally higher density of dedicated cybersecurity firms than the country as a whole.\n\nNote: The regional breakdown is available on an office basis (not firm basis), as the report models locations at office level. Nationally, 160 out of 489 firms (33%) are classified as Pure-Play, per the summary table on Page 19.",
+  "citations": [
+    {
+      "page": 15,
+      "quote": "Across the 489 businesses identified, we have identified 734 offices in Ireland, which are mapped in Figure 3.6 below.",
+      "fact": "The report identifies 489 cybersecurity businesses and 734 offices in Ireland."
+    },
+    {
+      "page": 15,
+      "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Cork | 129 | 37 |",
+      "fact": "In the South-West region of Cork, there are 129 cybersecurity offices, of which 37 are 'Pure-Play' (dedicated firms)."
+    },
+    {
+      "page": 15,
+      "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Ireland | 734 | 191 |",
+      "fact": "Nationally, there are 734 cybersecurity offices, with 191 of them being 'Pure-Play' (dedicated firms)."
+    },
+    {
+      "page": 19,
+      "quote": "| Dedication of Service | N | % |\n|---|---|---|\n| Dedicated Cyber Security Services | 160 | 33% |",
+      "fact": "There are 160 'Pure-Play' (dedicated) cybersecurity firms in Ireland, making up 33% of the total."
+    },
+    {
+      "page": 12,
+      "quote": "This section outlines key features of the 489 identified firms that are engaged in the provision of cyber security products or services in Ireland...",
+      "fact": "The total number of identified cybersecurity firms in Ireland is 489."
+    },
+    {
+      "page": 15,
+      "quote": "Across the 489 businesses identified, we have identified 734 offices in Ireland, which are mapped in Figure 3.6 below.",
+      "fact": "The report identifies 489 cybersecurity businesses and 734 offices in Ireland."
+    },
+    {
+      "page": 15,
+      "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Cork | 129 | 37 |",
+      "fact": "In the South-West region of Cork, there are 129 cybersecurity offices, of which 37 are 'Pure-Play' (dedicated firms)."
+    },
+    {
+      "page": 15,
+      "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Ireland | 734 | 191 |",
+      "fact": "Nationally, there are 734 cybersecurity offices, with 191 of them being 'Pure-Play' (dedicated firms)."
+    },
+    {
+      "page": 19,
+      "quote": "| Dedication of Service | N | % |\n|---|---|---|\n| Dedicated Cyber Security Services | 160 | 33% |",
+      "fact": "There are 160 'Pure-Play' (dedicated) cybersecurity firms in Ireland, making up 33% of the total."
+    }
+  ],
+  "calculations": [
+    {
+      "expression": "(37 / 129) * 100",
+      "result": 28.68217054263566,
+      "result_formatted": "28.682171"
+    },
+    {
+      "expression": "(191 / 734) * 100",
+      "result": 26.021798365122617,
+      "result_formatted": "26.021798"
+    },
+    {
+      "expression": "(37 / 129) * 100",
+      "result": 28.68217054263566,
+      "result_formatted": "28.682171"
+    },
+    {
+      "expression": "(191 / 734) * 100",
+      "result": 26.021798365122617,
+      "result_formatted": "26.021798"
+    }
+  ],
+  "iterations": 12,
+  "elapsed_seconds": 131.69,
+  "model": "google/gemini-2.5-pro-preview",
+  "trace": [
+    {
+      "iteration": 1,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "vector_search",
+          "args": {
+            "chunk_type": "table",
+            "query": "concentration of 'Pure-Play' cybersecurity firms in the South-West vs National Average"
+          },
+          "result": {
+            "query": "concentration of 'Pure-Play' cybersecurity firms in the South-West vs National Average",
+            "results": [
+              {
+                "page": 12,
+                "type": "table",
+                "relevance_score": 0.7555,
+                "content": "| 222222 CCYYBBEERR IIRREELLAANNDD 22002222 EEDDIITTIIOONN\n03\nProfile of Ireland\u2019s\nCyber Security Sector\n3.1\nINTRODUCTION\nThis section outlines key features of the 489\nidentified firms that are engaged in the provision\nof cyber security products or services in Ireland,\noutlining key features within the sector by:\n\u2013 Size (Large and SMEs)\n\u2013 Dedicated and Diversified Status\n\u2013 Company Background (Country of Origin)\n\u2013 Products and Services Offered (Taxonomy) |  |\n| --- | --- |\n|  | 3.2 NUMBER OF FIRMS DEDICATED & DIVERSIFIED PROVIDERS OF CYBER SECURITY PRODUCTS & SERVICES For the 489 firms engaged in cyber security in Ireland, Figure 3.1 sets out the breakdown by size Within this research, firms were categorised by (using EU SME definitions6). whether they are: DEDICATED (PURE-PLAY) FIGURE 3.1 NUMBER OF FIRMS BY SIZE This refers to where all, or most (75%+), of a firm\u2019s revenue can be attributable to cyber security provision). These firms offer products or services LARGE 44% specific to the cyber security sector. MEDIUM 12% DIVERSIFIED This refers to firms that offer cyber security services SMALL 16% as part of a wider business structure e.g., finance, insurance, or defence - or that have internal cyber MICRO 28% security operations or product development teams. 0% 10% 20% 30% 40% The rationale underpinning the need to provide this distinction is attributable to seeking to understand how firms either set up to solely provide cyber security services or to provide cyber Ireland\u2019s cyber security sector consists of a high security as one product or service among others, proportion (44%) of large companies. This is which could impact the firm\u2019s size, scale, growth, significant when compared to the wider Irish and market activity. economy where SMEs typically account for over 99% of the business population7. Indeed, the percentage of \u2018large\u2019 firms in Ireland\u2019s cyber security sector is much higher than comparable studies. For example, the UK Cyber Security Sectoral Analysis 2021 estimates that approximately 10% of UK cyber security firms are large, compared to 44% in Ireland. For the 56% of cyber security businesses that are SMEs, these are split between medium (12%), small (16%), and micro-enterprises (28%). 6 Full size definitions: Large: Employees >=250 and Turnover > \u20ac50m or Balance sheet total > \u20ac43m // Medium: Employees >50 and < 250 And Turnover <= \u20ac50m or Balance sheet total <= \u20ac43m // Small: Employees >10 and < 50 And Turnover <= \u20ac10m or Balance sheet total <= \u20ac43m // Micro: Employees < 10 And Turnover <= \u20ac2m or Balance sheet total <= \u20ac2m 7 Central Statistics Office (2021). \u2018Business Demography 2019 - CSO - Central Statistics Office\u2019. Available at: https://www.cso.ie/en/ releasesandpublications/er/bd/businessdemography2019/ |"
+              },
+              {
+                "page": 22,
+                "type": "table",
+                "relevance_score": 0.751,
+                "content": "| COMPARATOR REGION |  |\n| --- | --- |\n| Estonia | Number of known firms: 55 domestic SMEs 20 Key Strengths: The permeation of digital culture across Estonian society has allowed its citizens to interact with the state almost exclusively in an online environment through a personal digital identification card, and demonstrates how a state can proactively engage with the private sector to increase resilience and prevent cybercrime.21 The cyberattack against the Estonian state in 2007 resulted in a coordinated reassessment of the nation\u2019s approach to cyber security, which saw greater cooperation between volunteers, government, and the private sector to ensure wider society was digitally literate and the online environment secure. Ireland should learn from the Estonian approach to national cyber security, promoting cyber security due diligence across all aspects of society. This will reduce the threat of future attacks on the state and promote better integration of technology across society. |\n| Israel | Number of firms: 424 22 (5 per 100,000 national population) Key comparisons: Ireland is similar to Israel, in terms of GDP and national population, while also having few natural resources. Ireland is similar to Israel, in terms of GDP and national population, while also having few natural resources. Key strengths: Israel has a strong domestic cyber security market and is a leader in cyber security start-ups, innovation & investment. Key Strengths: Number of firms: 424 (5 per 100,000 national population) Israel has a strong domestic cyber security market and is a leader in cyber security start-ups, innovation & investment. The Israeli government supports the cyber security sector in a number of ways. The country has a strong technological sector that is supported well by the government and their Advanced Technology Park (one of six centres nationally) facilitates both theoretical and practical development of the sector in line with public and private interests, attracting international firms like Oracle, Dell, EMC, IBM and Deutsch Telekom to conduct R & D work in Israel. |"
+              },
+              {
+                "page": 19,
+                "type": "table",
+                "relevance_score": 0.7449,
+                "content": "| NUMBER OF FIRMS EMPLOYMENT |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n| Total: | 489 |  | 7,351 |  |\n| Dedication of Service | N | % | N | % |\n| Dedicated Cyber Security Services | 160 | 33% | 3,368 | 46% |\n| Diversified Services That Include a Cyber Security Offering | 329 | 67% | 3,983 | 54% |\n| Country of Origin |  |  |  |  |\n| Domestic Firms | 240 | 49% | 2,101 | 29% |\n| Foreign-Owned Firms | 249 | 51% | 5,250 | 71% |\n| Size |  |  |  |  |\n| Large | 217 | 44% | 5,304 | 72% |\n| Medium | 58 | 12% | 1,130 | 15% |\n| Small | 77 | 16% | 620 | 8% |\n| Micro | 137 | 28% | 297 | 4% |"
+              },
+              {
+                "page": 21,
+                "type": "table",
+                "relevance_score": 0.7448,
+                "content": "|  |  |\n| --- | --- |\n| COMPARATOR REGION |  |\n| Northern Ireland | Key Cluster Regions: Belfast, Derry Key Comparisons: The Republic of Ireland is home to nearly 5 times as many cyber security firms as Northern Ireland and has more firms per capita. GVA per employee is also higher in Ireland at \u20ac150k, compared to NI\u2019s \u20ac82k, and the average salary is c.\u20ac75k in comparison to NI\u2019s c. \u20ac55k. The sector in both regions is shaped heavily by foreign direct investment as 70% of employment in Ireland is FDI supported, compared to 79% in Northern Ireland. Key Strength: Northern Ireland is the home of the well-respected UK wide innovation and knowledge centre for cyber security CSIT, affiliated with Queens University Belfast and the UK National Cyber Security Centre. Note the activity at CSIT \u2013 basic research, applied research, post-grad, PhDs, supporting start-ups & innovation. Northern Ireland has set a goal to become one of the leading cyber security economies globally, recognising and building on NI\u2019s \u201cblend of world-class talent, leading forensic science expertise and tech re-search excellence\u201d, to achieve 5,000 cyber security job roles by 2030. |\n| United Kingdom (including Northern Ireland) | Key Cluster Regions: Cheltenham, Bristol, London, Manchester Key Comparisons: There are over three times as many firms providing cyber security products and services in the UK than in the Republic of Ireland; however, Ireland performs strongly on a per capita basis. On average, advertised cyber security salaries in Ireland appear slightly higher (c.\u20ac75k), compared to the UK average of \u00a360k/\u20ac70k. In Ireland, GVA per employee also appears higher at \u20ac150k, compared to \u00a3100k/\u20ac120k in the UK. Key Strength: The UK\u2019s National Cyber Security Strategy outlines how the government aims to develop a \u2018programme of initiatives to give start-ups the support they need to get their first customers and attract further investment\u2019, comparative to Ireland, investing c.10 times more on cyber security per capita.18 |"
+              },
+              {
+                "page": 21,
+                "type": "table",
+                "relevance_score": 0.7296,
+                "content": "|  |  |\n| --- | --- |\n| COMPARATOR REGION |  |\n|  | The UK is well placed to support cyber security start-ups through a range of government, industry and academic support services. These include initiatives to support early-stage ideas and start-ups (e.g., HutZero, Cyber 101, CyberASAP). The UK\u2019s Department for Digital, Culture, Media and Sports also support a range of initiatives tailored towards companies with high- growth potential, such as the NCSC Cyber Accelerator, the London Office for Rapid Cybersecurity Advancement (LORCA). Ireland should support the development of its domestic R&D and business support services, allocating greater public spend to the development of cyber security capabilities. |\n| United States | Key Cluster Regions: Virginia, Texas, Nevada Key Comparisons: There are an estimated 3,500 cyber security firms in the US, compared to the 491 in Ireland. Key Strength: The US market is of key significance to the Irish economy, and more than half of all employment within Ireland\u2019s sector is supported by firms from the United States. This supports best practice adoption and skill transfer from the US to firms based in Ireland. The US is considered world-leading in cyber security due to several factors such as its dominant military capabilities and domestic industry, alongside the government\u2019s evolved management of hacking risks.19 The most important factor contributing to the country\u2019s overall capabilities is the breadth of firms focused on information and communication technology. Ireland should continue to engage and promote US-driven FDI. This will support best practice adoption in local markets, and enhance national capabilities. As outlined above FDI firms also support large scale employment. |"
+              },
+              {
+                "page": 9,
+                "type": "table",
+                "relevance_score": 0.7193,
+                "content": "|  |  |\n| --- | --- |\n| STAGE DESCRIPTION |  |\n| Desk Research | The research team conducted a rapid assessment of literature relating to Ireland\u2019s cyber security sector. This was used to inform our definition of the sector, and to assist in the identification of relevant cyber security businesses in Ireland. |\n| Definition and Market Scoping | The research team, in collaboration with Cyber Ireland, developed a sector taxonomy that maps known products and services offered within Ireland\u2019s cyber security sector. This taxonomy was also informed by previous international studies and aligns with the NI Cyber Security Snapshot to allow for all-island mapping in the future. It should be noted that the cyber security sector does not have a formal NACE Code (this is the European classification system that groups organisations according to their business activities), and therefore keyword analysis has been used to identify firms. The team subsequently used a range of market intelligence, web analytics (using over six hundred keywords), and business sources to map hundreds of potentially relevant businesses. Each business was subject to scoring and manual review, before being shortlisted as a relevant cyber security firm (where it had identifiable revenue or employment linked to cyber security activity). |"
+              }
+            ]
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 2,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "vector_search",
+          "args": {
+            "chunk_type": "table",
+            "query": "cybersecurity firms by region"
+          },
+          "result": {
+            "query": "cybersecurity firms by region",
+            "results": [
+              {
+                "page": 21,
+                "type": "table",
+                "relevance_score": 0.7808,
+                "content": "|  |  |\n| --- | --- |\n| COMPARATOR REGION |  |\n|  | The UK is well placed to support cyber security start-ups through a range of government, industry and academic support services. These include initiatives to support early-stage ideas and start-ups (e.g., HutZero, Cyber 101, CyberASAP). The UK\u2019s Department for Digital, Culture, Media and Sports also support a range of initiatives tailored towards companies with high- growth potential, such as the NCSC Cyber Accelerator, the London Office for Rapid Cybersecurity Advancement (LORCA). Ireland should support the development of its domestic R&D and business support services, allocating greater public spend to the development of cyber security capabilities. |\n| United States | Key Cluster Regions: Virginia, Texas, Nevada Key Comparisons: There are an estimated 3,500 cyber security firms in the US, compared to the 491 in Ireland. Key Strength: The US market is of key significance to the Irish economy, and more than half of all employment within Ireland\u2019s sector is supported by firms from the United States. This supports best practice adoption and skill transfer from the US to firms based in Ireland. The US is considered world-leading in cyber security due to several factors such as its dominant military capabilities and domestic industry, alongside the government\u2019s evolved management of hacking risks.19 The most important factor contributing to the country\u2019s overall capabilities is the breadth of firms focused on information and communication technology. Ireland should continue to engage and promote US-driven FDI. This will support best practice adoption in local markets, and enhance national capabilities. As outlined above FDI firms also support large scale employment. |"
+              },
+              {
+                "page": 19,
+                "type": "table",
+                "relevance_score": 0.7635,
+                "content": "| NUMBER OF FIRMS EMPLOYMENT |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n| Total: | 489 |  | 7,351 |  |\n| Dedication of Service | N | % | N | % |\n| Dedicated Cyber Security Services | 160 | 33% | 3,368 | 46% |\n| Diversified Services That Include a Cyber Security Offering | 329 | 67% | 3,983 | 54% |\n| Country of Origin |  |  |  |  |\n| Domestic Firms | 240 | 49% | 2,101 | 29% |\n| Foreign-Owned Firms | 249 | 51% | 5,250 | 71% |\n| Size |  |  |  |  |\n| Large | 217 | 44% | 5,304 | 72% |\n| Medium | 58 | 12% | 1,130 | 15% |\n| Small | 77 | 16% | 620 | 8% |\n| Micro | 137 | 28% | 297 | 4% |"
+              },
+              {
+                "page": 22,
+                "type": "table",
+                "relevance_score": 0.7619,
+                "content": "| COMPARATOR REGION |  |\n| --- | --- |\n| Estonia | Number of known firms: 55 domestic SMEs 20 Key Strengths: The permeation of digital culture across Estonian society has allowed its citizens to interact with the state almost exclusively in an online environment through a personal digital identification card, and demonstrates how a state can proactively engage with the private sector to increase resilience and prevent cybercrime.21 The cyberattack against the Estonian state in 2007 resulted in a coordinated reassessment of the nation\u2019s approach to cyber security, which saw greater cooperation between volunteers, government, and the private sector to ensure wider society was digitally literate and the online environment secure. Ireland should learn from the Estonian approach to national cyber security, promoting cyber security due diligence across all aspects of society. This will reduce the threat of future attacks on the state and promote better integration of technology across society. |\n| Israel | Number of firms: 424 22 (5 per 100,000 national population) Key comparisons: Ireland is similar to Israel, in terms of GDP and national population, while also having few natural resources. Ireland is similar to Israel, in terms of GDP and national population, while also having few natural resources. Key strengths: Israel has a strong domestic cyber security market and is a leader in cyber security start-ups, innovation & investment. Key Strengths: Number of firms: 424 (5 per 100,000 national population) Israel has a strong domestic cyber security market and is a leader in cyber security start-ups, innovation & investment. The Israeli government supports the cyber security sector in a number of ways. The country has a strong technological sector that is supported well by the government and their Advanced Technology Park (one of six centres nationally) facilitates both theoretical and practical development of the sector in line with public and private interests, attracting international firms like Oracle, Dell, EMC, IBM and Deutsch Telekom to conduct R & D work in Israel. |"
+              },
+              {
+                "page": 21,
+                "type": "table",
+                "relevance_score": 0.752,
+                "content": "|  |  |\n| --- | --- |\n| COMPARATOR REGION |  |\n| Northern Ireland | Key Cluster Regions: Belfast, Derry Key Comparisons: The Republic of Ireland is home to nearly 5 times as many cyber security firms as Northern Ireland and has more firms per capita. GVA per employee is also higher in Ireland at \u20ac150k, compared to NI\u2019s \u20ac82k, and the average salary is c.\u20ac75k in comparison to NI\u2019s c. \u20ac55k. The sector in both regions is shaped heavily by foreign direct investment as 70% of employment in Ireland is FDI supported, compared to 79% in Northern Ireland. Key Strength: Northern Ireland is the home of the well-respected UK wide innovation and knowledge centre for cyber security CSIT, affiliated with Queens University Belfast and the UK National Cyber Security Centre. Note the activity at CSIT \u2013 basic research, applied research, post-grad, PhDs, supporting start-ups & innovation. Northern Ireland has set a goal to become one of the leading cyber security economies globally, recognising and building on NI\u2019s \u201cblend of world-class talent, leading forensic science expertise and tech re-search excellence\u201d, to achieve 5,000 cyber security job roles by 2030. |\n| United Kingdom (including Northern Ireland) | Key Cluster Regions: Cheltenham, Bristol, London, Manchester Key Comparisons: There are over three times as many firms providing cyber security products and services in the UK than in the Republic of Ireland; however, Ireland performs strongly on a per capita basis. On average, advertised cyber security salaries in Ireland appear slightly higher (c.\u20ac75k), compared to the UK average of \u00a360k/\u20ac70k. In Ireland, GVA per employee also appears higher at \u20ac150k, compared to \u00a3100k/\u20ac120k in the UK. Key Strength: The UK\u2019s National Cyber Security Strategy outlines how the government aims to develop a \u2018programme of initiatives to give start-ups the support they need to get their first customers and attract further investment\u2019, comparative to Ireland, investing c.10 times more on cyber security per capita.18 |"
+              },
+              {
+                "page": 9,
+                "type": "table",
+                "relevance_score": 0.7491,
+                "content": "|  |  |\n| --- | --- |\n| STAGE DESCRIPTION |  |\n| Desk Research | The research team conducted a rapid assessment of literature relating to Ireland\u2019s cyber security sector. This was used to inform our definition of the sector, and to assist in the identification of relevant cyber security businesses in Ireland. |\n| Definition and Market Scoping | The research team, in collaboration with Cyber Ireland, developed a sector taxonomy that maps known products and services offered within Ireland\u2019s cyber security sector. This taxonomy was also informed by previous international studies and aligns with the NI Cyber Security Snapshot to allow for all-island mapping in the future. It should be noted that the cyber security sector does not have a formal NACE Code (this is the European classification system that groups organisations according to their business activities), and therefore keyword analysis has been used to identify firms. The team subsequently used a range of market intelligence, web analytics (using over six hundred keywords), and business sources to map hundreds of potentially relevant businesses. Each business was subject to scoring and manual review, before being shortlisted as a relevant cyber security firm (where it had identifiable revenue or employment linked to cyber security activity). |"
+              },
+              {
+                "page": 15,
+                "type": "table",
+                "relevance_score": 0.7402,
+                "content": "| REGION NO. OF CYBER NO. OF OFFICES NO. OF OFFICES BUSINESSES PER\nSECURITY OFFICES (DEDICATED FIRMS) (DIVERSIFIED FIRMS) 10K POPULATION |  |  |  |  |\n| --- | --- | --- | --- | --- |\n| Cork | 129 | 37 | 92 | 7 |\n| Galway | 39 | 8 | 31 | 5 |\n| Dublin | 397 | 100 | 297 | 4 |\n| Limerick | 30 | 3 | 27 | 3 |\n| Belfast | 86 | 31 | 55 | 3 |\n| Ireland | 734 | 191 | 543 | 1.5 |"
+              }
+            ]
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 3,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "get_page",
+          "args": {
+            "page": 15
+          },
+          "result": {
+            "page": 15,
+            "chunks": [
+              {
+                "type": "table",
+                "content": "| REGION NO. OF CYBER NO. OF OFFICES NO. OF OFFICES BUSINESSES PER\nSECURITY OFFICES (DEDICATED FIRMS) (DIVERSIFIED FIRMS) 10K POPULATION |  |  |  |  |\n| --- | --- | --- | --- | --- |\n| Cork | 129 | 37 | 92 | 7 |\n| Galway | 39 | 8 | 31 | 5 |\n| Dublin | 397 | 100 | 297 | 4 |\n| Limerick | 30 | 3 | 27 | 3 |\n| Belfast | 86 | 31 | 55 | 3 |\n| Ireland | 734 | 191 | 543 | 1.5 |"
+              },
+              {
+                "type": "table",
+                "content": "|  |  |  |  |\n| --- | --- | --- | --- |"
+              },
+              {
+                "type": "text",
+                "content": "28 CYBER IRELAND 2022 EDITION STATE OF THE CYBER SECURITY SECTOR IN IRELAND 29\n3.4 LOCATION OF CYBER SECURITY FIRMS While some of Ireland\u2019s largest cities are home to the highest count of cyber security offices, this is\nsomewhat reflective of their populations. As such, we have also identified the number of cyber security\noffices per 10,000 capita, to further identify the relative strengths and importance of cyber security to\neach location.\nThis section explores the location of cyber security businesses in Ireland. Across the 489 businesses\nidentified, we have identified 734 offices in Ireland, which are mapped in Figure 3.6 below. This also\nPlease note this is only on an office, rather than an employment, basis (which is not modelled at a city\nincludes a number of research assets as identified by Cyber Ireland.\nlevel), but still demonstrates the proportional strength of cyber security in areas such as Cork, Galway, and\nLimerick relative to their population.\nFIGURE 3.6: HEAT MAP OF OFFICE LOCATIONS AND ACADEMIC INSTITUTES For example, Cork has the highest concentration of cyber security multinationals and is home to the top\nfive cyber security employers in Ireland.\nLETTERKENNY DUNDALK TABLE 3.2 NUMBER OF OFFICES BY COUNTY\nLetterkenny Institute of Technology Dundalk Institute of Technology\nSLIGO REGION NO. OF CYBER NO. OF OFFICES NO. OF OFFICES BUSINESSES PER\nSECURITY OFFICES (DEDICATED FIRMS) (DIVERSIFIED FIRMS) 10K POPULATION\nInstitute of Technology Sligo\nDUBLIN\nATHLONE Cork 129 37 92 7\nDublin City University\nTechnological University\nTrinity College Dublin\nof the Shannon\nDublin Business School Galway 39 8 31 5\nGALWAY\nUniversity College Dublin\nGalway-Mayo Institute\nof Technology Technology University Dublin Dublin 397 100 297 4\nNUI Galway\nLimerick 30 3 27 3\nKILDARE\nMaynooth University\nCARLOW\nBelfast 86 31 55 3\nInstitute of Technology Carlow\nLIMERICK\nIreland 734 191 543 1.5\nUniversity of Limerick\nWATERFORD\nTechnological University\nWaterford Institute of Technology\nof the Shannon\nSource: Perspective Economics\nKERRY CORK\nMunster Technological University Munster Technological University\nUniversity College Cork\nLower Density Greater Density\nSource: Cyber Ireland, Perspective Economics"
+              }
+            ]
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 4,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "vector_search",
+          "args": {
+            "query": "regional distribution of cybersecurity firms"
+          },
+          "result": {
+            "query": "regional distribution of cybersecurity firms",
+            "results": [
+              {
+                "page": 21,
+                "type": "table",
+                "relevance_score": 0.7764,
+                "content": "|  |  |\n| --- | --- |\n| COMPARATOR REGION |  |\n|  | The UK is well placed to support cyber security start-ups through a range of government, industry and academic support services. These include initiatives to support early-stage ideas and start-ups (e.g., HutZero, Cyber 101, CyberASAP). The UK\u2019s Department for Digital, Culture, Media and Sports also support a range of initiatives tailored towards companies with high- growth potential, such as the NCSC Cyber Accelerator, the London Office for Rapid Cybersecurity Advancement (LORCA). Ireland should support the development of its domestic R&D and business support services, allocating greater public spend to the development of cyber security capabilities. |\n| United States | Key Cluster Regions: Virginia, Texas, Nevada Key Comparisons: There are an estimated 3,500 cyber security firms in the US, compared to the 491 in Ireland. Key Strength: The US market is of key significance to the Irish economy, and more than half of all employment within Ireland\u2019s sector is supported by firms from the United States. This supports best practice adoption and skill transfer from the US to firms based in Ireland. The US is considered world-leading in cyber security due to several factors such as its dominant military capabilities and domestic industry, alongside the government\u2019s evolved management of hacking risks.19 The most important factor contributing to the country\u2019s overall capabilities is the breadth of firms focused on information and communication technology. Ireland should continue to engage and promote US-driven FDI. This will support best practice adoption in local markets, and enhance national capabilities. As outlined above FDI firms also support large scale employment. |"
+              },
+              {
+                "page": 32,
+                "type": "text",
+                "relevance_score": 0.7701,
+                "content": "6622 CCYYBBEERR IIRREELLAANNDD 22002222 EEDDIITTIIOONN STATE OF THE CYBER SECURITY SECTOR IN IRELAND 63\n08 8.1 KEY FINDINGS\nKey Findings and\nRecommendations We have identified 489 firms offering a product or service within the sector, or that employ\ncyber security professionals into their wider R&D teams.\nOf the 7,351 employees in the sector, 71% are employed in a firm headquartered overseas.\nUS-headquartered firms, in particular, play a pivotal in shaping the sector, supporting 55%\nof all employment.\nThis section provides an overview of key findings\nidentified within the project, alongside some The number of large multinationals is significantly higher than in other studies, which shows\nrecommendations to help stimulate and sustain potential for team-based growth for foreign-owned firms in Ireland, while Irish firms are\nfuture growth in the industry. typically SMEs, suggesting they would benefit from support services to increase their size\nand scale.\nThere are 734 offices across the country, mainly concentrated in Dublin, Cork, Galway,\nand Limerick but with emerging growth nationwide. While Dublin is home to more offices\noverall, both Cork and Galway have more firms per capita and host a range of assets that\nsupport the development of a thriving cyber security ecosystem.\nThe cyber security sector is currently generating approximately \u20ac1.1bn in direct GVA for the\nIrish economy.\nGVA per employee within the cyber security sector is strong in Ireland (\u20ac150k) signalling a\nproductive workforce. This compares favourably to the UK estimate of c. \u00a3100k (c. \u20ac120k)."
+              },
+              {
+                "page": 19,
+                "type": "table",
+                "relevance_score": 0.7647,
+                "content": "| NUMBER OF FIRMS EMPLOYMENT |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n| Total: | 489 |  | 7,351 |  |\n| Dedication of Service | N | % | N | % |\n| Dedicated Cyber Security Services | 160 | 33% | 3,368 | 46% |\n| Diversified Services That Include a Cyber Security Offering | 329 | 67% | 3,983 | 54% |\n| Country of Origin |  |  |  |  |\n| Domestic Firms | 240 | 49% | 2,101 | 29% |\n| Foreign-Owned Firms | 249 | 51% | 5,250 | 71% |\n| Size |  |  |  |  |\n| Large | 217 | 44% | 5,304 | 72% |\n| Medium | 58 | 12% | 1,130 | 15% |\n| Small | 77 | 16% | 620 | 8% |\n| Micro | 137 | 28% | 297 | 4% |"
+              },
+              {
+                "page": 12,
+                "type": "text",
+                "relevance_score": 0.7616,
+                "content": "222222 CCYYBBEERR IIRREELLAANNDD 22002222 EEDDIITTIIOONN STATE OF THE CYBER SECURITY SECTOR IN IRELAND 23 03 3.2 NUMBER OF FIRMS DEDICATED & DIVERSIFIED PROVIDERS OF CYBER SECURITY PRODUCTS & SERVICES For the 489 firms engaged in cyber security in Profile of Ireland\u2019s Ireland, Figure 3.1 sets out the breakdown by size Within this research, firms were categorised by (using EU SME definitions6). whether they are: Cyber Security Sector DEDICATED (PURE-PLAY) FIGURE 3.1 NUMBER OF FIRMS BY SIZE This refers to where all, or most (75%+), of a firm\u2019s revenue can be attributable to cyber security provision). These firms offer products or services LARGE 44% specific to the cyber security sector. 3.1 INTRODUCTION MEDIUM 12% DIVERSIFIED This refers to firms that offer cyber security services This section outlines key features of the 489 SMALL 16% as part of a wider business structure e.g., finance, identified firms that are engaged in the provision insurance, or defence - or that have internal cyber of cyber security products or services in Ireland, MICRO 28% security operations or product development outlining key features within the sector by: teams. \u2013 Size (Large and SMEs) 0% 10% 20% 30% 40% The rationale underpinning the need to provide \u2013 Dedicated and Diversified Status this distinction is attributable to seeking to \u2013 Company Background (Country of Origin) understand how firms either set up to solely \u2013 Products and Services Offered (Taxonomy) provide cyber security services or to provide cyber Ireland\u2019s cyber security sector consists of a high security as one product or service among others, proportion (44%) of large companies. This is which could impact the firm\u2019s size, scale, growth, significant when compared to the wider Irish and market activity. economy where SMEs typically account for over 99% of the business population7. Indeed, the percentage of \u2018large\u2019 firms in Ireland\u2019s cyber security sector is much higher than comparable studies. For example, the UK Cyber Security Sectoral Analysis 2021 estimates that approximately 10% of UK cyber security firms are large, compared to 44% in Ireland. For the 56% of cyber security businesses that are SMEs, these are split between medium (12%), small (16%), and micro-enterprises (28%). 6 Full size definitions: Large: Employees >=250 and Turnover > \u20ac50m or Balance sheet total > \u20ac43m // Medium: Employees"
+              },
+              {
+                "page": 12,
+                "type": "table",
+                "relevance_score": 0.7608,
+                "content": "| 222222 CCYYBBEERR IIRREELLAANNDD 22002222 EEDDIITTIIOONN\n03\nProfile of Ireland\u2019s\nCyber Security Sector\n3.1\nINTRODUCTION\nThis section outlines key features of the 489\nidentified firms that are engaged in the provision\nof cyber security products or services in Ireland,\noutlining key features within the sector by:\n\u2013 Size (Large and SMEs)\n\u2013 Dedicated and Diversified Status\n\u2013 Company Background (Country of Origin)\n\u2013 Products and Services Offered (Taxonomy) |  |\n| --- | --- |\n|  | 3.2 NUMBER OF FIRMS DEDICATED & DIVERSIFIED PROVIDERS OF CYBER SECURITY PRODUCTS & SERVICES For the 489 firms engaged in cyber security in Ireland, Figure 3.1 sets out the breakdown by size Within this research, firms were categorised by (using EU SME definitions6). whether they are: DEDICATED (PURE-PLAY) FIGURE 3.1 NUMBER OF FIRMS BY SIZE This refers to where all, or most (75%+), of a firm\u2019s revenue can be attributable to cyber security provision). These firms offer products or services LARGE 44% specific to the cyber security sector. MEDIUM 12% DIVERSIFIED This refers to firms that offer cyber security services SMALL 16% as part of a wider business structure e.g., finance, insurance, or defence - or that have internal cyber MICRO 28% security operations or product development teams. 0% 10% 20% 30% 40% The rationale underpinning the need to provide this distinction is attributable to seeking to understand how firms either set up to solely provide cyber security services or to provide cyber Ireland\u2019s cyber security sector consists of a high security as one product or service among others, proportion (44%) of large companies. This is which could impact the firm\u2019s size, scale, growth, significant when compared to the wider Irish and market activity. economy where SMEs typically account for over 99% of the business population7. Indeed, the percentage of \u2018large\u2019 firms in Ireland\u2019s cyber security sector is much higher than comparable studies. For example, the UK Cyber Security Sectoral Analysis 2021 estimates that approximately 10% of UK cyber security firms are large, compared to 44% in Ireland. For the 56% of cyber security businesses that are SMEs, these are split between medium (12%), small (16%), and micro-enterprises (28%). 6 Full size definitions: Large: Employees >=250 and Turnover > \u20ac50m or Balance sheet total > \u20ac43m // Medium: Employees >50 and < 250 And Turnover <= \u20ac50m or Balance sheet total <= \u20ac43m // Small: Employees >10 and < 50 And Turnover <= \u20ac10m or Balance sheet total <= \u20ac43m // Micro: Employees < 10 And Turnover <= \u20ac2m or Balance sheet total <= \u20ac2m 7 Central Statistics Office (2021). \u2018Business Demography 2019 - CSO - Central Statistics Office\u2019. Available at: https://www.cso.ie/en/ releasesandpublications/er/bd/businessdemography2019/ |"
+              },
+              {
+                "page": 21,
+                "type": "table",
+                "relevance_score": 0.7584,
+                "content": "|  |  |\n| --- | --- |\n| COMPARATOR REGION |  |\n| Northern Ireland | Key Cluster Regions: Belfast, Derry Key Comparisons: The Republic of Ireland is home to nearly 5 times as many cyber security firms as Northern Ireland and has more firms per capita. GVA per employee is also higher in Ireland at \u20ac150k, compared to NI\u2019s \u20ac82k, and the average salary is c.\u20ac75k in comparison to NI\u2019s c. \u20ac55k. The sector in both regions is shaped heavily by foreign direct investment as 70% of employment in Ireland is FDI supported, compared to 79% in Northern Ireland. Key Strength: Northern Ireland is the home of the well-respected UK wide innovation and knowledge centre for cyber security CSIT, affiliated with Queens University Belfast and the UK National Cyber Security Centre. Note the activity at CSIT \u2013 basic research, applied research, post-grad, PhDs, supporting start-ups & innovation. Northern Ireland has set a goal to become one of the leading cyber security economies globally, recognising and building on NI\u2019s \u201cblend of world-class talent, leading forensic science expertise and tech re-search excellence\u201d, to achieve 5,000 cyber security job roles by 2030. |\n| United Kingdom (including Northern Ireland) | Key Cluster Regions: Cheltenham, Bristol, London, Manchester Key Comparisons: There are over three times as many firms providing cyber security products and services in the UK than in the Republic of Ireland; however, Ireland performs strongly on a per capita basis. On average, advertised cyber security salaries in Ireland appear slightly higher (c.\u20ac75k), compared to the UK average of \u00a360k/\u20ac70k. In Ireland, GVA per employee also appears higher at \u20ac150k, compared to \u00a3100k/\u20ac120k in the UK. Key Strength: The UK\u2019s National Cyber Security Strategy outlines how the government aims to develop a \u2018programme of initiatives to give start-ups the support they need to get their first customers and attract further investment\u2019, comparative to Ireland, investing c.10 times more on cyber security per capita.18 |"
+              }
+            ]
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 5,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "calculate",
+          "args": {
+            "expression": "(37 / 129) * 100"
+          },
+          "result": {
+            "expression": "(37 / 129) * 100",
+            "result": 28.68217054263566,
+            "result_formatted": "28.682171"
+          }
+        },
+        {
+          "tool": "calculate",
+          "args": {
+            "expression": "(191 / 734) * 100"
+          },
+          "result": {
+            "expression": "(191 / 734) * 100",
+            "result": 26.021798365122617,
+            "result_formatted": "26.021798"
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 6,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "cite",
+          "args": {
+            "quote": "Across the 489 businesses identified, we have identified 734 offices in Ireland, which are mapped in Figure 3.6 below.",
+            "fact": "The report identifies 489 cybersecurity businesses and 734 offices in Ireland.",
+            "page": 15
+          },
+          "result": {
+            "citation": {
+              "page": 15,
+              "quote": "Across the 489 businesses identified, we have identified 734 offices in Ireland, which are mapped in Figure 3.6 below.",
+              "fact": "The report identifies 489 cybersecurity businesses and 734 offices in Ireland."
+            }
+          }
+        },
+        {
+          "tool": "cite",
+          "args": {
+            "page": 15,
+            "fact": "In the South-West region of Cork, there are 129 cybersecurity offices, of which 37 are 'Pure-Play' (dedicated firms).",
+            "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Cork | 129 | 37 |"
+          },
+          "result": {
+            "citation": {
+              "page": 15,
+              "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Cork | 129 | 37 |",
+              "fact": "In the South-West region of Cork, there are 129 cybersecurity offices, of which 37 are 'Pure-Play' (dedicated firms)."
+            }
+          }
+        },
+        {
+          "tool": "cite",
+          "args": {
+            "fact": "Nationally, there are 734 cybersecurity offices, with 191 of them being 'Pure-Play' (dedicated firms).",
+            "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Ireland | 734 | 191 |",
+            "page": 15
+          },
+          "result": {
+            "citation": {
+              "page": 15,
+              "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Ireland | 734 | 191 |",
+              "fact": "Nationally, there are 734 cybersecurity offices, with 191 of them being 'Pure-Play' (dedicated firms)."
+            }
+          }
+        },
+        {
+          "tool": "cite",
+          "args": {
+            "page": 19,
+            "fact": "There are 160 'Pure-Play' (dedicated) cybersecurity firms in Ireland, making up 33% of the total.",
+            "quote": "| Dedication of Service | N | % |\n|---|---|---|\n| Dedicated Cyber Security Services | 160 | 33% |"
+          },
+          "result": {
+            "citation": {
+              "page": 19,
+              "quote": "| Dedication of Service | N | % |\n|---|---|---|\n| Dedicated Cyber Security Services | 160 | 33% |",
+              "fact": "There are 160 'Pure-Play' (dedicated) cybersecurity firms in Ireland, making up 33% of the total."
+            }
+          }
+        },
+        {
+          "tool": "cite",
+          "args": {
+            "page": 12,
+            "fact": "The total number of identified cybersecurity firms in Ireland is 489.",
+            "quote": "This section outlines key features of the 489 identified firms that are engaged in the provision of cyber security products or services in Ireland..."
+          },
+          "result": {
+            "citation": {
+              "page": 12,
+              "quote": "This section outlines key features of the 489 identified firms that are engaged in the provision of cyber security products or services in Ireland...",
+              "fact": "The total number of identified cybersecurity firms in Ireland is 489."
+            }
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 7,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "calculate",
+          "args": {
+            "expression": "(37 / 129) * 100"
+          },
+          "result": {
+            "expression": "(37 / 129) * 100",
+            "result": 28.68217054263566,
+            "result_formatted": "28.682171"
+          }
+        }
+      ],
+      "text_output": "The concentration of 'Pure-Play' cybersecurity firms in the South-West, using office data from Cork as a proxy, is slightly higher than the national average.\n\n*   **South-West (Cork) Concentration of 'Pure-Play' Offices:** 28.7%\n*   **National Concentration of 'Pure-Play' Offices:** 26.0%\n\nThese figures are based on the number of cybersecurity *offices*, as a regional breakdown of *firms* is not available in the report. The document identifies 489 cybersecurity firms in Ireland but 734 cybersecurity offices, indicating that some firms have multiple locations.\n\n### Calculations:\n\n*   **South-West (Cork) Concentration:**\n    *   (37 'Pure-Play' Offices in Cork / 129 Total Offices in Cork) * 100 = 28.68%\n    "
+    },
+    {
+      "iteration": 8,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "calculate",
+          "args": {
+            "expression": "(191 / 734) * 100"
+          },
+          "result": {
+            "expression": "(191 / 734) * 100",
+            "result": 26.021798365122617,
+            "result_formatted": "26.021798"
+          }
+        }
+      ],
+      "text_output": "*   **National Concentration:**\n    *   (191 'Pure-Play' Offices in Ireland / 734 Total Offices in Ireland) * 100 = 26.02%\n    "
+    },
+    {
+      "iteration": 9,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "cite",
+          "args": {
+            "quote": "Across the 489 businesses identified, we have identified 734 offices in Ireland, which are mapped in Figure 3.6 below.",
+            "page": 15,
+            "fact": "The report identifies 489 cybersecurity businesses and 734 offices in Ireland."
+          },
+          "result": {
+            "citation": {
+              "page": 15,
+              "quote": "Across the 489 businesses identified, we have identified 734 offices in Ireland, which are mapped in Figure 3.6 below.",
+              "fact": "The report identifies 489 cybersecurity businesses and 734 offices in Ireland."
+            }
+          }
+        }
+      ],
+      "text_output": "### Citations:\n\n*   **Total Firms vs. Offices:** The report states, \"Across the 489 businesses identified, we have identified 734 offices in Ireland...\"\n    "
+    },
+    {
+      "iteration": 10,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "cite",
+          "args": {
+            "page": 15,
+            "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Cork | 129 | 37 |",
+            "fact": "In the South-West region of Cork, there are 129 cybersecurity offices, of which 37 are 'Pure-Play' (dedicated firms)."
+          },
+          "result": {
+            "citation": {
+              "page": 15,
+              "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Cork | 129 | 37 |",
+              "fact": "In the South-West region of Cork, there are 129 cybersecurity offices, of which 37 are 'Pure-Play' (dedicated firms)."
+            }
+          }
+        }
+      ],
+      "text_output": "*   **South-West (Cork) Office Data:** In Cork, there are 129 cybersecurity offices, with 37 being 'Pure-Play' (dedicated) firms.\n    "
+    },
+    {
+      "iteration": 11,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "cite",
+          "args": {
+            "page": 15,
+            "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Ireland | 734 | 191 |",
+            "fact": "Nationally, there are 734 cybersecurity offices, with 191 of them being 'Pure-Play' (dedicated firms)."
+          },
+          "result": {
+            "citation": {
+              "page": 15,
+              "quote": "| REGION | NO. OF CYBER SECURITY OFFICES | NO. OF OFFICES (DEDICATED FIRMS) |\n|---|---|---|\n| Ireland | 734 | 191 |",
+              "fact": "Nationally, there are 734 cybersecurity offices, with 191 of them being 'Pure-Play' (dedicated firms)."
+            }
+          }
+        }
+      ],
+      "text_output": "*   **National Office Data:** Nationally, there are 734 cybersecurity offices, and 191 of those are 'Pure-Play' (dedicated).\n    "
+    },
+    {
+      "iteration": 12,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "cite",
+          "args": {
+            "quote": "| Dedication of Service | N | % |\n|---|---|---|\n| Dedicated Cyber Security Services | 160 | 33% |",
+            "fact": "There are 160 'Pure-Play' (dedicated) cybersecurity firms in Ireland, making up 33% of the total.",
+            "page": 19
+          },
+          "result": {
+            "citation": {
+              "page": 19,
+              "quote": "| Dedication of Service | N | % |\n|---|---|---|\n| Dedicated Cyber Security Services | 160 | 33% |",
+              "fact": "There are 160 'Pure-Play' (dedicated) cybersecurity firms in Ireland, making up 33% of the total."
+            }
+          }
+        }
+      ],
+      "text_output": "*   **Total 'Pure-Play' Firms:** There are 160 'Pure-Play' (dedicated) cybersecurity firms in Ireland.\n    "
+    }
+  ],
+  "timestamp": "2026-04-29T07:32:25.548474Z",
+  "test_id": "test_2_synthesis"
+}

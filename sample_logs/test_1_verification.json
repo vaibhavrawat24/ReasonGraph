@@ -1,0 +1,152 @@
+{
+  "run_id": "943962ec",
+  "answer": "The total number of jobs reported in the Irish cyber security sector is 7,351. This figure is stated in a summary table and in the accompanying text on page 19 of the report.\n\n### Citations\n- **The total number of jobs reported in the cyber security sector is 7,351.**\n  - **Page:** 19\n  - **Quote:** \"NUMBER OF FIRMS EMPLOYMENT\nTotal: 489 7,351\"\n- **The total employment number is explicitly stated as approximately 7,351 staff.**\n  - **Page:** 19\n  - **Quote:** \"In other words, the estimated Gross Value Added reflects the economic contribution of the 489 cyber security firms, and their c. 7,351 staff employed in Ireland and relates to cyber security activity only.\"",
+  "citations": [
+    {
+      "page": 19,
+      "quote": "NUMBER OF FIRMS EMPLOYMENT\nTotal: 489 7,351",
+      "fact": "The total number of jobs reported in the cyber security sector is 7,351."
+    },
+    {
+      "page": 19,
+      "quote": "In other words, the estimated Gross Value Added reflects the economic contribution of the 489 cyber security firms, and their c. 7,351 staff employed in Ireland and relates to cyber security activity only.",
+      "fact": "The total employment number is explicitly stated as approximately 7,351 staff."
+    }
+  ],
+  "calculations": [],
+  "iterations": 4,
+  "elapsed_seconds": 280.99,
+  "model": "google/gemini-2.5-pro-preview",
+  "timestamp": "2026-04-29T12:44:22.365894Z",
+  "test_id": "test_1_verification",
+  "query": "What is the total number of jobs reported, and where exactly is this stated?",
+  "trace": [
+    {
+      "iteration": 1,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "vector_search",
+          "args": {
+            "query": "total number of jobs reported"
+          },
+          "result": {
+            "query": "total number of jobs reported",
+            "results": [
+              {
+                "page": 19,
+                "type": "table",
+                "relevance_score": 0.7098,
+                "content": "| NUMBER OF FIRMS EMPLOYMENT |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n| Total: | 489 |  | 7,351 |  |\n| Dedication of Service | N | % | N | % |\n| Dedicated Cyber Security Services | 160 | 33% | 3,368 | 46% |\n| Diversified Services That Include a Cyber Security Offering | 329 | 67% | 3,983 | 54% |\n| Country of Origin |  |  |  |  |\n| Domestic Firms | 240 | 49% | 2,101 | 29% |\n| Foreign-Owned Firms | 249 | 51% | 5,250 | 71% |\n| Size |  |  |  |  |\n| Large | 217 | 44% | 5,304 | 72% |\n| Medium | 58 | 12% | 1,130 | 15% |\n| Small | 77 | 16% | 620 | 8% |\n| Micro | 137 | 28% | 297 | 4% |"
+              },
+              {
+                "page": 12,
+                "type": "text",
+                "relevance_score": 0.6815,
+                "content": "cyber security businesses that are SMEs, these are split between medium (12%), small (16%), and micro-enterprises (28%). 6 Full size definitions: Large: Employees >=250 and Turnover > \u20ac50m or Balance sheet total > \u20ac43m // Medium: Employees >50 and < 250 And Turnover <= \u20ac50m or Balance sheet total <= \u20ac43m // Small: Employees >10 and < 50 And Turnover <= \u20ac10m or Balance sheet total <= \u20ac43m // Micro: Employees < 10 And Turnover <= \u20ac2m or Balance sheet total <= \u20ac2m 7 Central Statistics Office (2021). \u2018Business Demography 2019 - CSO - Central Statistics Office\u2019. Available at: https://www.cso.ie/en/ releasesandpublications/er/bd/businessdemography2019/"
+              },
+              {
+                "page": 36,
+                "type": "text",
+                "relevance_score": 0.6789,
+                "content": "70 CYBER IRELAND 2022 EDITION STATE OF THE CYBER SECURITY SECTOR IN IRELAND 71 The objectives above inform the structure of this report, which includes an overview of the size and make- A headcount of total employees within the sector was also completed, building on previous engagement up of the Irish Cyber Security sector, its economic contribution, the current market opportunities, and undertaken by Cyber Ireland with firms, as well as the review of publicly available employment figures from wider recommendations. LinkedIn profiles and CRO. Other outputs include a longlist of firms engaged in Cyber Security operations working in a dedicated or A business survey was also sent out to the firms. There was a total of 100 responses used to identify the diversified capacity and a survey of approximately 100 firms working in Ireland\u2019s cyber security sector. strengths, opportunities, and barriers faced by Ireland\u2019s cyber security sector. Within this research, the team has identified 489 providers of cyber security products and ser-vices (aligned to the definition set out within the UK Cyber Security Sectoral Analysis, and the Centre for Secure ECONOMIC PROFILING AND POTENTIAL Information Technologies\u2019 sectoral study for Northern Ireland). An economic profile of the sector was produced using company accounts data (where available using Each business has been matched against Companies Registration Office (CRO) registration da-ta (to Bureau van Dijk) and survey responses. Employment estimates were also augmented using the most recent understand the name, description, locations, etc) and web data. Revenue and employment activity has company team size on LinkedIn (filtered by cyber security roles only). been identified through the use of company accounts, LinkedIn, and or direct en-gagement with site leads. The key stages are set out below: The research team used company accounts and survey data to estimate cyber security-related employment, followed by revenue and GVA. Where there were gaps in data, estimates have been used on a \u2018per employee basis. A simple CAGR of 10% is assumed for employment and GVA forecasting up to 2030. SECTOR PROFILING The sector profile was generated collaboratively with Cyber Ireland and includes known members of Cyber Ireland\u2019s network as well as other firms identified in CRO records and identified online through both LinkedIn and general web searches. Search criteria include a c.600-word"
+              },
+              {
+                "page": 20,
+                "type": "table",
+                "relevance_score": 0.6761,
+                "content": "| NO. OF FIRMS\n(PER 100,000 NUMBER OF SECTOR AVERAGE\nREGION NATIONAL EMPLOYEES REVENUE SECTOR GVA SALARY\nPOPULATION) |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- |\n| Ireland | 489 (9.7)12 | 7,351 | \u20ac2.1bn | \u20ac1.1bn | \u20ac75k |\n| Northern Ireland 13 | 104 (6)14 | 2,299 | Not Estimated | \u00a3161m (\u20ac190m) | \u00a348k (\u20ac55k) |\n| UK 15 | 1,838 (2.7)16 | 52,727 | \u00a310.1bn (\u20ac11.9bn) | \u00a35.3bn (\u20ac6.3bn) | \u00a360k (\u20ac70k)17 |"
+              },
+              {
+                "page": 19,
+                "type": "text",
+                "relevance_score": 0.6633,
+                "content": "36 CYBER IRELAND 2022 EDITION STATE OF THE CYBER SECURITY SECTOR IN IRELAND 37\n4.4 GROSS VALUE ADDED 4.5 SECTOR SUMMARY\nA summary of key firmographic statistics relating to the sector are presented below:\nGross Value Added (GVA) is used as a measure of productivity (at a firm level, or above). It captures the\nsum of a firm\u2019s Gross Profit, Employee Remuneration, Amortisation and Depreciation. In this respect,\nany increase in GVA can highlight an improvement in the performance of a firm or a sector, as evidenced\nTABLE 4.2 SUMMARY TABLE\nthrough higher profitability or enhanced earnings.\nThis study is a baseline and is the first estimate of the GVA of the cyber security sector in Ireland. Company\naccounts within Ireland can often capture global or international economic activity, and we have therefore\nNUMBER OF FIRMS EMPLOYMENT\nadjusted the estimates to account for this.\nIn other words, the estimated Gross Value Added reflects the economic contribution of the 489 cyber Total: 489 7,351\nsecurity firms, and their c. 7,351 staff employed in Ireland and relates to cyber security activity only.\nDedication of Service N % N %\nIn terms of the current GVA, we estimate that Ireland\u2019s cyber security sector generated approximately\n\u20ac1.1bn in 2021.\nDedicated Cyber Security Services 160 33% 3,368 46%\nThe table below sets out average salaries 11 advertised for cyber security roles in Ireland, estimated GVA\nper employee, and the total estimate for sector-wide GVA in Ireland. Diversified Services That Include 329 67% 3,983 54%\na Cyber Security Offering\nCountry of Origin\nTABLE 4.1 IRELAND CYBER SECURITY SECTOR GVA ESTIMATE (2021)\n(AND PER CAPITA)\nDomestic Firms 240 49% 2,101 29%\nESTIMATED GVA ESTIMATED NUMBER\nTYPE OF FIRM AVERAGE SALARY PER EMPLOYEE OF EMPLOYEES TOTAL GVA Foreign-Owned Firms 249 51% 5,250 71%\nDedicated \u20ac75k \u20ac136k 3,372 \u20ac459m Size\nDiversified \u20ac77k \u20ac155k 3,983 \u20ac617m\nLarge 217 44% 5,304 72%\nTotal estimated GVA: \u20ac1.1bn Medium 58 12% 1,130 15%\nSmall 77 16% 620 8%\nMicro 137 28% 297 4%\nSource: Perspective Economics, Cyber Ireland\n11 Average advertised salaries estimated using Morgan McKinley cyber security role salary estimates: https://www.morganmckinley.com/ie/irelandsalary-guide-calculator"
+              },
+              {
+                "page": 27,
+                "type": "table",
+                "relevance_score": 0.656,
+                "content": "| GVA EMPLOYMENT |  |  |\n| --- | --- | --- |\n| 2021 | \u20ac1,075,523,670 (current estimate) | 7,351 (current estimate) |\n| 2022 | \u20ac1,183,076,038 (projection) | 8,086 (projection) |\n| 2023 | \u20ac1,301,383,641 | 8,895 |\n| 2024 | \u20ac1,431,522,005 | 9,784 |\n| 2025 | \u20ac1,574,674,206 | 10,763 |\n| 2026 | \u20ac1,732,141,627 | 11,839 |\n| 2027 | \u20ac1,905,355,789 | 13,023 |\n| 2028 | \u20ac2,095,891,368 | 14,325 |\n| 2029 | \u20ac2,305,480,505 | 15,758 |\n| 2030 | \u20ac2,536,028,556 (c. \u20ac2.5bn) | 17,333 |"
+              }
+            ]
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 2,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "get_page",
+          "args": {
+            "page": 19
+          },
+          "result": {
+            "page": 19,
+            "chunks": [
+              {
+                "type": "table",
+                "content": "| NUMBER OF FIRMS EMPLOYMENT |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n| Total: | 489 |  | 7,351 |  |\n| Dedication of Service | N | % | N | % |\n| Dedicated Cyber Security Services | 160 | 33% | 3,368 | 46% |\n| Diversified Services That Include a Cyber Security Offering | 329 | 67% | 3,983 | 54% |\n| Country of Origin |  |  |  |  |\n| Domestic Firms | 240 | 49% | 2,101 | 29% |\n| Foreign-Owned Firms | 249 | 51% | 5,250 | 71% |\n| Size |  |  |  |  |\n| Large | 217 | 44% | 5,304 | 72% |\n| Medium | 58 | 12% | 1,130 | 15% |\n| Small | 77 | 16% | 620 | 8% |\n| Micro | 137 | 28% | 297 | 4% |"
+              },
+              {
+                "type": "table",
+                "content": "| ESTIMATED GVA ESTIMATED NUMBER\nTYPE OF FIRM AVERAGE SALARY PER EMPLOYEE OF EMPLOYEES TOTAL GVA |  |  |  |  |\n| --- | --- | --- | --- | --- |\n|  |  |  |  |  |\n| Dedicated | \u20ac75k | \u20ac136k | 3,372 | \u20ac459m |\n| Diversified | \u20ac77k | \u20ac155k | 3,983 | \u20ac617m |\n| Total estimated GVA: |  |  |  | \u20ac1.1bn |"
+              },
+              {
+                "type": "text",
+                "content": "36 CYBER IRELAND 2022 EDITION STATE OF THE CYBER SECURITY SECTOR IN IRELAND 37\n4.4 GROSS VALUE ADDED 4.5 SECTOR SUMMARY\nA summary of key firmographic statistics relating to the sector are presented below:\nGross Value Added (GVA) is used as a measure of productivity (at a firm level, or above). It captures the\nsum of a firm\u2019s Gross Profit, Employee Remuneration, Amortisation and Depreciation. In this respect,\nany increase in GVA can highlight an improvement in the performance of a firm or a sector, as evidenced\nTABLE 4.2 SUMMARY TABLE\nthrough higher profitability or enhanced earnings.\nThis study is a baseline and is the first estimate of the GVA of the cyber security sector in Ireland. Company\naccounts within Ireland can often capture global or international economic activity, and we have therefore\nNUMBER OF FIRMS EMPLOYMENT\nadjusted the estimates to account for this.\nIn other words, the estimated Gross Value Added reflects the economic contribution of the 489 cyber Total: 489 7,351\nsecurity firms, and their c. 7,351 staff employed in Ireland and relates to cyber security activity only.\nDedication of Service N % N %\nIn terms of the current GVA, we estimate that Ireland\u2019s cyber security sector generated approximately\n\u20ac1.1bn in 2021.\nDedicated Cyber Security Services 160 33% 3,368 46%\nThe table below sets out average salaries 11 advertised for cyber security roles in Ireland, estimated GVA\nper employee, and the total estimate for sector-wide GVA in Ireland. Diversified Services That Include 329 67% 3,983 54%\na Cyber Security Offering\nCountry of Origin\nTABLE 4.1 IRELAND CYBER SECURITY SECTOR GVA ESTIMATE (2021)\n(AND PER CAPITA)\nDomestic Firms 240 49% 2,101 29%\nESTIMATED GVA ESTIMATED NUMBER\nTYPE OF FIRM AVERAGE SALARY PER EMPLOYEE OF EMPLOYEES TOTAL GVA Foreign-Owned Firms 249 51% 5,250 71%\nDedicated \u20ac75k \u20ac136k 3,372 \u20ac459m Size\nDiversified \u20ac77k \u20ac155k 3,983 \u20ac617m\nLarge 217 44% 5,304 72%\nTotal estimated GVA: \u20ac1.1bn Medium 58 12% 1,130 15%\nSmall 77 16% 620 8%\nMicro 137 28% 297 4%\nSource: Perspective Economics, Cyber Ireland\n11 Average advertised salaries estimated using Morgan McKinley cyber security role salary estimates: https://www.morganmckinley.com/ie/irelandsalary-guide-calculator"
+              }
+            ]
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 3,
+      "finish_reason": "tool_calls",
+      "tool_calls": [
+        {
+          "tool": "cite",
+          "args": {
+            "page": 19,
+            "quote": "NUMBER OF FIRMS EMPLOYMENT\nTotal: 489 7,351",
+            "fact": "The total number of jobs reported in the cyber security sector is 7,351."
+          },
+          "result": {
+            "citation": {
+              "page": 19,
+              "quote": "NUMBER OF FIRMS EMPLOYMENT\nTotal: 489 7,351",
+              "fact": "The total number of jobs reported in the cyber security sector is 7,351."
+            }
+          }
+        },
+        {
+          "tool": "cite",
+          "args": {
+            "page": 19,
+            "fact": "The total employment number is explicitly stated as approximately 7,351 staff.",
+            "quote": "In other words, the estimated Gross Value Added reflects the economic contribution of the 489 cyber security firms, and their c. 7,351 staff employed in Ireland and relates to cyber security activity only."
+          },
+          "result": {
+            "citation": {
+              "page": 19,
+              "quote": "In other words, the estimated Gross Value Added reflects the economic contribution of the 489 cyber security firms, and their c. 7,351 staff employed in Ireland and relates to cyber security activity only.",
+              "fact": "The total employment number is explicitly stated as approximately 7,351 staff."
+            }
+          }
+        }
+      ],
+      "text_output": ""
+    },
+    {
+      "iteration": 4,
+      "finish_reason": "stop",
+      "tool_calls": [],
+      "text_output": "The total number of jobs reported in the Irish cyber security sector is 7,351. This figure is stated in a summary table and in the accompanying text on page 19 of the report.\n\n### Citations\n- **The total number of jobs reported in the cyber security sector is 7,351.**\n  - **Page:** 19\n  - **Quote:** \"NUMBER OF FIRMS EMPLOYMENT\nTotal: 489 7,351\"\n- **The total employment number is explicitly stated as approximately 7,351 staff.**\n  - **Page:** 19\n  - **Quote:** \"In other words, the estimated Gross Value Added reflects the economic contribution of the 489 cyber security firms, and their c. 7,351 staff employed in Ireland and relates to cyber security activity only.\""
+    }
+  ]
+}

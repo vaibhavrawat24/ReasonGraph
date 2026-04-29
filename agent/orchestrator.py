@@ -34,8 +34,10 @@ Rules you must follow:
 2. Use get_page to verify exact wording before citing.
 3. NEVER do arithmetic in your head — always call calculate() for any math.
 4. Always call cite() for every factual claim with its exact page and verbatim quote.
-5. If your first search doesn't find enough detail, search again with a different query.
-6. Only answer when you are confident. State uncertainty explicitly if it exists.
+5. If your first search doesn't find enough detail, try at least 2-3 different search queries before concluding.
+6. For regional or comparative queries, always search for both the specific region AND the national/total figures separately.
+7. Never return an empty answer. If you have retrieved relevant data, synthesize it even if partial.
+8. Only answer when you are confident. State uncertainty explicitly if it exists.
 
 Your final answer must include:
 - A direct answer to the question
@@ -80,6 +82,8 @@ def stream_agent(query: str) -> Generator[str, None, None]:
     iteration = 0
     final_answer = ""
 
+    last_text = ""  # fallback if MAX_ITERATIONS hit mid-tool-call
+
     while iteration < MAX_ITERATIONS:
         iteration += 1
 
@@ -94,6 +98,11 @@ def stream_agent(query: str) -> Generator[str, None, None]:
             temperature=0.1,
         )
 
+        if not response.choices:
+            console.print(f"[red]Empty response from API (rate limit or error), retrying in 5s...[/red]")
+            import time as _t; _t.sleep(5)
+            continue
+
         msg = response.choices[0].message
         finish_reason = response.choices[0].finish_reason
 
@@ -105,6 +114,7 @@ def stream_agent(query: str) -> Generator[str, None, None]:
         }
 
         if msg.content:
+            last_text = msg.content  # track latest reasoning text
             console.print(f"[dim]{msg.content[:300]}[/dim]")
 
         if finish_reason == "stop" or not msg.tool_calls:
@@ -148,6 +158,11 @@ def stream_agent(query: str) -> Generator[str, None, None]:
 
         trace.append(step)
 
+    # If we exhausted iterations without a clean stop, use last reasoning text
+    if not final_answer and last_text:
+        final_answer = last_text + "\n\n_(Note: agent reached max iterations; answer compiled from final reasoning step.)_"
+        console.print("[yellow]Max iterations reached — using last reasoning text as answer.[/yellow]")
+
     elapsed = round(time.time() - start_time, 2)
 
     output = {
@@ -168,12 +183,14 @@ def stream_agent(query: str) -> Generator[str, None, None]:
 
     yield _sse("done", {
         "run_id": run_id,
+        "query": query,
         "answer": final_answer,
         "citations": citations,
         "calculations": calculations,
         "iterations": iteration,
         "elapsed_seconds": elapsed,
         "model": MODEL,
+        "trace": trace,
         "timestamp": output["timestamp"],
     })
 

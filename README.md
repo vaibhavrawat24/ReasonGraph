@@ -103,7 +103,9 @@ API is now live at `http://localhost:8000`. Interactive docs at `http://localhos
 python run_tests.py
 ```
 
-This fires all 3 graded queries in sequence and saves results + traces to `logs/`.
+This fires all 3 graded queries in sequence and saves individual traces to `sample_logs/` (committed to git) and a combined result to `logs/`.
+
+Pre-run traces are already committed in `sample_logs/` for review without running anything.
 
 ---
 
@@ -270,9 +272,10 @@ curl http://localhost:8000/health
 │   └── orchestrator.py    # Agentic tool-use loop, streaming + blocking modes
 ├── api/
 │   └── main.py            # FastAPI app (/query and /query/stream)
+├── sample_logs/           # Pre-run evaluation traces (committed, for grader review)
 ├── data/                  # PDF, chunks.json, chroma_db/ (git-ignored)
-├── logs/                  # JSON trace logs per run (git-ignored)
-├── run_tests.py           # Fires all 3 evaluation queries
+├── logs/                  # Runtime JSON trace logs (git-ignored)
+├── run_tests.py           # Fires all 3 evaluation queries, saves to sample_logs/
 ├── requirements.txt
 └── .env.example
 ```

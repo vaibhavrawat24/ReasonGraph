@@ -5,6 +5,8 @@
 data/
 logs/
 
+# sample_logs/ is intentionally committed — contains evaluation traces for grading
+
 # python
 __pycache__/
 *.pyc

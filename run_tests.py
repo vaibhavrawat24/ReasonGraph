@@ -1,8 +1,13 @@
 """
 Runs the three evaluation test queries and saves logs.
+
+Traces are written to two places:
+  logs/            — gitignored, full runtime logs
+  sample_logs/     — committed to git, named per test for grader review
 """
 
 import json
+from pathlib import Path
 from dotenv import load_dotenv
 from rich.console import Console
 from rich.rule import Rule
@@ -12,6 +17,8 @@ load_dotenv()
 from agent.orchestrator import run_agent
 
 console = Console()
+
+SAMPLE_LOGS_DIR = Path("sample_logs")
 
 TEST_QUERIES = [
     {
@@ -31,6 +38,7 @@ TEST_QUERIES = [
 
 def main():
     console.print(Rule("[bold cyan]ReasonGraph — Evaluation Test Suite[/bold cyan]"))
+    SAMPLE_LOGS_DIR.mkdir(exist_ok=True)
 
     results = []
     for test in TEST_QUERIES:
@@ -51,10 +59,17 @@ def main():
             for c in result["calculations"]:
                 console.print(f"  {c['expression']} = {c['result_formatted']}")
 
+        # Save individual trace to sample_logs/ (committed to git)
+        sample_path = SAMPLE_LOGS_DIR / f"{test['id']}.json"
+        with open(sample_path, "w") as f:
+            json.dump(result, f, indent=2)
+        console.print(f"[dim]Saved to {sample_path}[/dim]")
+
+    Path("logs").mkdir(exist_ok=True)
     with open("logs/test_suite_results.json", "w") as f:
         json.dump(results, f, indent=2)
 
-    console.print(Rule("[bold green]All tests complete. Results in logs/test_suite_results.json[/bold green]"))
+    console.print(Rule("[bold green]All tests complete. Traces in sample_logs/[/bold green]"))
 
 
 if __name__ == "__main__":
