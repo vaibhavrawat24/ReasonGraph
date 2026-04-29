@@ -15,7 +15,7 @@ from chromadb.config import Settings
 from sentence_transformers import SentenceTransformer
 
 CHROMA_PATH = Path("data/chroma_db")
-COLLECTION_NAME = "cyber_ireland_2022"
+COLLECTION_NAME = "reasongraph_docs"
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 
 _collection: chromadb.Collection | None = None
@@ -48,7 +48,7 @@ TOOL_SCHEMAS = [
         "function": {
             "name": "vector_search",
             "description": (
-                "Semantically search the Cyber Ireland 2022 report. "
+                "Semantically search the ingested document. "
                 "Returns the top-k most relevant chunks with their page numbers. "
                 "Use this as your first step for any query."
             ),

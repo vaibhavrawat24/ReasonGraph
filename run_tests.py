@@ -30,7 +30,7 @@ TEST_QUERIES = [
 
 
 def main():
-    console.print(Rule("[bold cyan]Cyber Ireland 2022 — Evaluation Test Suite[/bold cyan]"))
+    console.print(Rule("[bold cyan]ReasonGraph — Evaluation Test Suite[/bold cyan]"))
 
     results = []
     for test in TEST_QUERIES:

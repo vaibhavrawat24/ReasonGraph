@@ -21,8 +21,8 @@ from etl.embedder import embed_and_store
 DEFAULT_SOURCE = "https://cyberireland.ie/wp-content/uploads/2022/05/State-of-the-Cyber-Security-Sector-in-Ireland-2022-Report.pdf"
 
 app = FastAPI(
-    title="Document Intelligence API",
-    description="Agentic RAG backend — ingest any PDF and query it with a reasoning agent.",
+    title="ReasonGraph API",
+    description="Agentic RAG backend — ingest any PDF and query it with a multi-step reasoning agent.",
     version="1.0.0",
 )
 

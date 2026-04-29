@@ -16,7 +16,7 @@ console = Console()
 
 CHUNKS_PATH = Path("data/chunks.json")
 CHROMA_PATH = Path("data/chroma_db")
-COLLECTION_NAME = "cyber_ireland_2022"
+COLLECTION_NAME = "reasongraph_docs"
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 
 

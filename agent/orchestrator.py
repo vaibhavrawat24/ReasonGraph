@@ -26,7 +26,7 @@ MODEL = "google/gemini-2.5-pro-preview"
 MAX_ITERATIONS = 12
 LOGS_DIR = Path("logs")
 
-SYSTEM_PROMPT = """You are a precise research analyst for the Cyber Ireland 2022 report.
+SYSTEM_PROMPT = """You are a precise research analyst for the ingested document.
 Your job is to answer queries with complete accuracy and full citations.
 
 Rules you must follow:

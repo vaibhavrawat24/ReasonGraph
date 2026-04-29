@@ -1,6 +1,6 @@
-# Cyber Ireland 2022 — Agentic Intelligence Backend
+# ReasonGraph — Agentic Document Intelligence Backend
 
-A headless Python backend that ingests the Cyber Ireland 2022 PDF, processes it into a queryable vector store, and uses an autonomous LLM agent to answer complex multi-step queries with verifiable citations.
+A headless Python backend that ingests any PDF, processes it into a queryable vector store, and uses an autonomous LLM agent to answer complex multi-step queries with verifiable citations, grounded math, and exact page references.
 
 ---
 
@@ -69,7 +69,7 @@ OPENROUTER_API_KEY=sk-or-v1-...
 The pipeline accepts any PDF — a remote URL or a local file path:
 
 ```bash
-# Default: Cyber Ireland 2022 report
+# Default: Cyber Ireland 2022 report (bundled example)
 python -m etl.run_etl
 
 # Any public URL
