@@ -1,0 +1,47 @@
+# secrets
+.env
+
+# generated data (too large / machine-specific)
+data/
+logs/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# macos
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# jupyter
+.ipynb_checkpoints/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
