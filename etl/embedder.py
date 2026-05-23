@@ -11,6 +11,7 @@ from chromadb.config import Settings
 from sentence_transformers import SentenceTransformer
 from rich.console import Console
 from rich.progress import track
+import agent.tools as _agent_tools
 
 console = Console()
 
@@ -37,14 +38,20 @@ def embed_and_store(chunks: list[dict[str, Any]] | None = None) -> chromadb.Coll
         with open(CHUNKS_PATH) as f:
             chunks = json.load(f)
 
-    collection = get_chroma_collection()
-
-    # Skip if already populated
-    if collection.count() >= len(chunks):
-        console.print(
-            f"[yellow]ChromaDB already has {collection.count()} items, skipping embed.[/yellow]"
-        )
-        return collection
+    # Delete and recreate so a fresh ingest always replaces the old document.
+    client = chromadb.PersistentClient(
+        path=str(CHROMA_PATH),
+        settings=Settings(anonymized_telemetry=False),
+    )
+    try:
+        client.delete_collection(COLLECTION_NAME)
+        console.print(f"[yellow]Dropped existing collection '{COLLECTION_NAME}'[/yellow]")
+    except Exception:
+        pass
+    collection = client.create_collection(
+        name=COLLECTION_NAME,
+        metadata={"hnsw:space": "cosine"},
+    )
 
     console.print(f"[cyan]Loading embedding model: {EMBED_MODEL}[/cyan]")
     model = SentenceTransformer(EMBED_MODEL)
@@ -75,6 +82,10 @@ def embed_and_store(chunks: list[dict[str, Any]] | None = None) -> chromadb.Coll
         )
 
     console.print(f"[green]Stored {collection.count()} chunks in ChromaDB[/green]")
+
+    # Reset cached singleton so the next query fetches the fresh collection.
+    _agent_tools._collection = None
+
     return collection
 
 

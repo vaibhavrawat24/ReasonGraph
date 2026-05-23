@@ -7,6 +7,7 @@ import json
 import re
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse
 
 import pdfplumber
 import requests
@@ -24,8 +25,9 @@ def resolve_pdf(source: str) -> Path:
     Downloads the file if it's a URL.
     """
     if source.startswith("http://") or source.startswith("https://"):
-        # Derive a safe filename from the URL
-        filename = source.rstrip("/").split("/")[-1]
+        # Derive a safe filename from the URL (strip query params and fragments)
+        parsed = urlparse(source)
+        filename = parsed.path.rstrip("/").split("/")[-1] or "document"
         if not filename.endswith(".pdf"):
             filename += ".pdf"
         dest = Path("data") / filename

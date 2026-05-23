@@ -5,12 +5,15 @@ FastAPI backend exposing:
   POST /query/stream  — SSE stream, emits agent steps in real time
 """
 
+import logging
 import os
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
+
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
@@ -87,8 +90,12 @@ def ingest(request: IngestRequest, background_tasks: BackgroundTasks):
       {"source": "/Users/me/documents/report.pdf"}
     """
     def _run():
-        chunks = run_extraction(request.source)
-        embed_and_store(chunks)
+        try:
+            chunks = run_extraction(request.source)
+            embed_and_store(chunks)
+            logger.info("Ingestion complete: %s (%d chunks)", request.source, len(chunks))
+        except Exception as exc:
+            logger.error("Ingestion failed for %s: %s", request.source, exc, exc_info=True)
 
     background_tasks.add_task(_run)
     return {"status": "ingestion started", "source": request.source}
