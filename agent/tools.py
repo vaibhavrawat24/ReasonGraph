@@ -29,7 +29,12 @@ def _get_collection() -> chromadb.Collection:
             path=str(CHROMA_PATH),
             settings=Settings(anonymized_telemetry=False),
         )
-        _collection = client.get_collection(COLLECTION_NAME)
+        try:
+            _collection = client.get_collection(COLLECTION_NAME)
+        except Exception:
+            raise RuntimeError(
+                "Vector store is empty — call POST /ingest first to load a document."
+            )
     return _collection
 
 

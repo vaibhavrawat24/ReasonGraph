@@ -100,7 +100,7 @@ def stream_agent(query: str) -> Generator[str, None, None]:
 
         if not response.choices:
             console.print(f"[red]Empty response from API (rate limit or error), retrying in 5s...[/red]")
-            import time as _t; _t.sleep(5)
+            time.sleep(5)
             continue
 
         msg = response.choices[0].message
@@ -181,31 +181,19 @@ def stream_agent(query: str) -> Generator[str, None, None]:
     _save_log(run_id, output)
     console.print(f"\n[bold green]Done in {elapsed}s ({iteration} iterations)[/bold green]")
 
-    yield _sse("done", {
-        "run_id": run_id,
-        "query": query,
-        "answer": final_answer,
-        "citations": citations,
-        "calculations": calculations,
-        "iterations": iteration,
-        "elapsed_seconds": elapsed,
-        "model": MODEL,
-        "trace": trace,
-        "timestamp": output["timestamp"],
-    })
+    yield _sse("done", output)
 
 
 def run_agent(query: str) -> dict[str, Any]:
     """Blocking wrapper — consumes the stream and returns the final result dict."""
     final: dict = {}
     for event_str in stream_agent(query):
-        # Parse SSE to find the "done" event
-        for line in event_str.strip().split("\n"):
-            if line.startswith("data:"):
-                pass
-        if '"done"' in event_str or "event: done" in event_str:
-            data_line = [l for l in event_str.split("\n") if l.startswith("data:")][0]
-            final = json.loads(data_line[len("data:"):].strip())
+        lines = event_str.strip().split("\n")
+        event_type = next((l[len("event:"):].strip() for l in lines if l.startswith("event:")), None)
+        if event_type == "done":
+            data_line = next((l for l in lines if l.startswith("data:")), None)
+            if data_line:
+                final = json.loads(data_line[len("data:"):].strip())
     return final
 
 
